@@ -1,11 +1,20 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CardsComponent } from './pages/cards/cards.component';
+import { CardsHorizontalComponent } from './pages/cards-horizontal/cards-horizontal.component';
+import { CardsVerticalComponent } from './pages/cards-vertical/cards-vertical.component';
 
 const routes: Routes = [
   {
-    path: 'cards',
-    component: CardsComponent,
+    path: '',
+    component: CardsVerticalComponent,
+  },
+  {
+    path: 'horizontal',
+    component: CardsHorizontalComponent,
+  },
+  {
+    path: 'vertical',
+    component: CardsVerticalComponent,
   },
 ];
 
