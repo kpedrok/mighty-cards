@@ -44,7 +44,7 @@
 
   .content {
     flex: 2;
-    padding: 30px 10px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -82,4 +82,21 @@
 .description {
   overflow: hidden;
   text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; /* Adjust the number of lines as needed */
+  /* line-clamp property is not yet standardized, use -webkit-line-clamp for now */
+}
+
+h1 {
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 3px 0;
 }
